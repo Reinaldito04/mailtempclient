@@ -76,8 +76,13 @@ function HeaderMail() {
       </div>
 
       {loading ? (
-        <p>Cargando...</p> // Muestra un mensaje de carga mientras se obtiene el correo electrónico
+        <div className="text-center pt-2">
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
       ) : (
+        // Muestra un mensaje de carga mientras se obtiene el correo electrónico
         <TableMail login={login} domain={domain} /> // Renderiza el componente TableMail una vez que el correo electrónico ha sido obtenido
       )}
 
@@ -100,7 +105,9 @@ function HeaderMail() {
         </div>
         <div className="text-center pt-1">
           <CopyToClipboard text={`${login}@${domain}`}>
-            <button className="btn" onClick={()=>alert("texto copiado")}>Copiar Email</button>
+            <button className="btn" onClick={() => alert("texto copiado")}>
+              Copiar Email
+            </button>
           </CopyToClipboard>
         </div>
       </Modal>
