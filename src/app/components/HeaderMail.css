@@ -1,0 +1,58 @@
+.contenedor-principalHeader{
+    background-color: gray;
+    box-sizing: border-box;
+    margin: 0 ;
+    padding: 0;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-titulo h2{
+    font-size: 28px;
+    font-family: monospace;
+    font-weight: bolder;
+}
+.parrafMail{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 25px;
+}
+.contenedor-mail{
+    margin-top: 20px;
+    border: 2px dashed black;
+    border-radius: 10px;
+    height: 150px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input{
+    padding: 10px;
+    width: 100%;
+    border-radius: 25px;
+    margin-top: 20px;
+
+}
+.contenedor-info{
+    width: 50%;
+    margin-top: 10px;
+}
+.contenedor-info p{
+    text-align: center;
+    text-wrap: balance;
+    font-size: 14px;
+    color: whitesmoke;
+}
+.qrimg{
+    width: 35px;
+    
+    height: 35px;
+}
+
+  
